@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Silkscreen;
+    src: url("../fonts/slkscr.ttf");
+}
+
+
+body{
+    background-color: rgba(255,234,0,255);
+    vertical-align: middle;
+}
+
+#computer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    user-select: none;
+    height: 270px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    
+}
+
+.button{
+    width:180px;
+    height:60px;
+    border-style: solid;
+    border-color: black;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    box-shadow: 2px 2px 2px black;
+}
+
+#rock-button{
+    background-image: url(../Icons/Rock-text.png);
+}
+
+#paper-button{
+    background-image: url(../Icons/Paper-text.png);
+}
+
+#scissors-button{
+    background-image: url(../Icons/Scissors-text.png);
+}
+
+#result-box{
+    font-family: Silkscreen;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+#start-message{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-family: Silkscreen;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+#scoreboard{
+    text-align: center;
+    font-family: Silkscreen;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+

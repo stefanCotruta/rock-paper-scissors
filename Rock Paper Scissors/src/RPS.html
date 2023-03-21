@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="RPS.css">
+        <link rel="icon" href="../Icons/Rock.png">
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="grid-container">
+                <div class="grid-item" id="start-message"><p>CHOOSE YOUR WEAPON</p></div>
+
+                <div class="grid-item"><p id="result-box"></p>
+                </div>
+
+
+            </div>
+
+            <div class="grid-container" id="computer">
+                <div class="grid-item"></div>
+
+                <div id="computer-box">
+                    <img class="computer-option" id="image-box" src="">
+                </div>
+
+                <div class="grid-item"></div>
+            </div>
+
+            <div class="grid-container">
+                <div class="button-container">
+                    <button class="button" id="rock-button" type="button" value="rock" onclick="rockSelection()"></button>
+                    <button class="button" id="paper-button" type="button" value="paper" onclick="paperSelection()"></button>
+                    <button class="button" id="scissors-button" type="button" value="scissors" onclick="scissorsSelection()"></button>
+                </div>
+
+            </div>
+
+            <div class="grid-container" id="scoreboard">
+                <div class="grid-item">
+                    <p id="player-score">player: <span id="player-counter">0</span></p>
+                    <p id="computer-score">computer: <span id="computer-counter">0</span></p>
+                    <p id="games-played">games played: <span id="games-counter">0</span></p>
+                </div>
+            </div>
+
+
+            <script src="RPS.js"></script>
+        </div>
+    </body>
+</html>
